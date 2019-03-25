@@ -9,3 +9,7 @@ togglz:
     DESCRIPTION:
       enabled: true
 
+spring:
+  datasource:
+    username: sa
+    password: password

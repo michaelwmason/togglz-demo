@@ -11,12 +11,12 @@ import org.togglz.core.manager.FeatureManager;
 public class ToggleController {
 
     FeatureManager featureManager;
-    StudentRepository studentRepository;
+    BookRepository bookRepository;
 
     @Autowired
-    public ToggleController(FeatureManager featureManager, StudentRepository studentRepository) {
+    public ToggleController(FeatureManager featureManager, BookRepository bookRepository) {
         this.featureManager = featureManager;
-        this.studentRepository = studentRepository;
+        this.bookRepository = bookRepository;
     }
 
     @GetMapping("/demo")
@@ -30,9 +30,9 @@ public class ToggleController {
     }
 
     @PostMapping("/students")
-    public Student createStudent(@RequestBody Student student) {
-        Student savedStudent = studentRepository.save(student);
-        return savedStudent;
+    public Book createStudent(@RequestBody Book book) {
+        Book savedBook = bookRepository.save(book);
+        return savedBook;
 
 
     }
