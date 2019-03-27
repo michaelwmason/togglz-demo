@@ -1,15 +1,15 @@
 package com.example.toggles;
 
 import org.togglz.core.Feature;
-import org.togglz.core.annotation.Label;
+import org.togglz.core.context.FeatureContext;
 
 public enum MyFeatures implements Feature {
-    @Label("Returns a message indicating if it the toggle is enabled")
     MESSAGE,
-    @Label("Toggles requirement for a description")
-    RATING
-
-
+    RATING;
+    
+    public boolean isActive() {
+        return FeatureContext.getFeatureManager().isActive(this);
+    }
 }
 
 

@@ -17,8 +17,9 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	runtimeOnly 'org.springframework.boot:spring-boot-devtools'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	compile("org.togglz:togglz-spring-boot-starter:2.6.1.Final")
-	compile("org.togglz:togglz-console:2.6.1.Final")
 	compile("org.springframework.boot:spring-boot-starter-data-jpa")
 	compile("com.h2database:h2")
+	compile("org.togglz:togglz-spring-boot-starter:2.6.1.Final")
+		// compile("org.togglz:togglz-core:2.6.1.Final")
+	compile("org.togglz:togglz-console:2.6.1.Final")
 }

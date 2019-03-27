@@ -1,13 +1,9 @@
 togglz:
+  feature-enums: com.example.toggles.MyFeatures
   console:
     path: /togglz
     secured: false
     use-management-port: false
-  features:
-    MESSAGE:
-      enabled: true
-    DESCRIPTION:
-      enabled: true
 
 spring:
   datasource:
